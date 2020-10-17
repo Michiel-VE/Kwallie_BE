@@ -1,7 +1,13 @@
 #top {
     height: 100%;
     background-image: url(../images/Halloween_bg_top.jpg);
-    background-position: center center;
+    background-position: top left;
+    overflow: hidden;
+}
+
+#titel{
+    position: relative;
+    top: -60px;
 }
 
 #inschrijven {
@@ -21,4 +27,8 @@
     font-weight: bolder;
     background-color: inherit;
     color: white;
+}
+
+.fz{
+    font-size: 22px;
 }

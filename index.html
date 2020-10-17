@@ -54,7 +54,7 @@
 </nav>
 <!-- Masthead-->
 <header id="top" class="masthead">
-    <div class="container h-100">
+    <div id="titel" class="container h-100">
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
                 <h1 class="text-uppercase text-white font-weight-bold">
@@ -64,9 +64,10 @@
                 <hr class="divider my-4"/>
             </div>
             <div class="col-lg-8 align-self-baseline">
-                <p class="text-white text-left font-weight-light mb-5">Hier vind je meer informatie over het event.
-                    Hieronder
-                    kan je je team inschrijven. Bij verdere vragen kan je ons altijd contacteren.</p>
+                <p class="text-white text-left mb-5">Doe mee en maak kans om de
+                    <span class="font-weight-bold fz">geldpot</span> te winnen. Meer informatie?
+                    Lees hieronder verder. Hieronder kan je je team inschrijven. Bij verdere vragen kan je ons altijd
+                    contacteren.</p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#inschrijven">Inschrijven!</a>
             </div>
         </div>
@@ -79,10 +80,19 @@
             <div class="col-lg-8 text-center">
                 <h2 class="text-white mt-0 text-uppercase">Meer informatie</h2>
                 <hr class="divider light my-4"/>
-                <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and
-                    running in no time! Choose one of our open source, free to download, and easy to use themes! No
-                    strings attached!</p>
-                <p id="timer"></p>
+                <p class="text-white-75 mb-4">
+                    Als organisator creëren wij een online gaming event waar je CS:GO kan spelen tegen anderen.
+                    Je kan deelnemen als je team uit 5 personen bestaat. Als je niet aan 5 personen komt, geen erg,
+                    contacteer ons en wij zullen jou helpen. Je moet geen bepaalt niveau hebben om mee te
+                    kunnen spelen.
+                </p>
+                <p class="text-white-75 mb-5">
+                    Nadat je hieronder je team inschrijft, wordt je doorgestuurd om te betalen. De prijs is €1 per
+                    persoon/€5 per groepje. Na je bent ingeschreven ontvang je een mail met de nodig informatie.
+                </p>
+                <hr class="divider light my-5">
+                <h4 class="font-weight-bold text-white text-uppercase">Time left:</h4>
+                <span id="timer" class="mb-1"></span>
             </div>
         </div>
     </div>
@@ -91,11 +101,12 @@
 <section class="page-section text-black" id="inschrijven">
     <div class="container p-5 bd text-center rounded">
         <h2 class="text-center mt-0">Schrijf je groep in!</h2>
+        <h6 class="text-center mt-0">Twijfel niet en doe mee</h6>
         <hr class="divider my-4"/>
         <div class="row m-auto">
             <form id="test-form" class="m-auto">
                 <div class="row m-auto">
-                    <div class="col-6 my-auto">
+                    <div class="col-12 col-md-6 my-auto">
                         <div class="col-12 m-auto form-group">
                             <label for="groepsnaam">Groepsnaam:</label>
                             <input class="mb-3" type="text" id="groepsnaam" name="groepsnaam">
@@ -108,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 my-auto">
+                    <div class="col-12 col-md-6 my-auto">
                         <div class="col-12 m-auto form-group ">
                             <label for="persoon1">Gamer 1:&emsp;</label>
                             <input class="mb-3" type="text" id="persoon1" name="persoon1">
@@ -132,6 +143,13 @@
                         <div class="col-12 m-auto form-group">
                             <label for="persoon5">Gamer 5:&emsp;</label>
                             <input class="mb-3" type="text" id="persoon5" name="persoon5">
+                        </div>
+                        <div class="col-12 m-auto form-group d-none">
+                            <label for="betaalt"></label>
+                            <input class="mb-3" type="text" id="betaalt" name="betaalt" value="neen">
+                        </div>
+                        <div class="col-12 m-auto form-group">
+
                         </div>
                     </div>
 
