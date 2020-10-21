@@ -15,7 +15,7 @@ $.fn.serializeObject = function () {
 };
 
 
-var $form = $('form#formNL'),
+var $form = $('form#formEN'),
     url = 'https://script.google.com/macros/s/AKfycbwfSKIHq5g7jmoAQGs3vCz0hIikPL8pLBASUZ8hafFec4z7Nh5M/exec'
 
 $('#submit-form').on('click', function (e) {
@@ -25,8 +25,8 @@ $('#submit-form').on('click', function (e) {
         method: "GET",
         dataType: "json",
         data: $form.serializeObject(),
-        success: $("#verstuur").html('<p class="text-center">Dank u</p> ' +
-            '<p>De inschrijving wordt pas geregistreed als de betaling voltooid is</p>' +
-            '<button class="btn bg-primary text-white"><a class="text-white" href="https://www.kbc.be/pay/nl?token=695f65af-288f-4006-a6dc-da5156d9ba42-Uo-b0Q3b08trF6GjpqU0af4_Ih4">Betaal hier</a></button>')
+        success: $("#verstuurEN").html('<p class="text-center">Thank you</p> ' +
+            '<p>The registration will be completed once we recieven a payment</p>' +
+            '<button class="btn bg-primary text-white"><a class="text-white" href="https://www.kbc.be/pay/nl?token=695f65af-288f-4006-a6dc-da5156d9ba42-Uo-b0Q3b08trF6GjpqU0af4_Ih4">Start payment</a></button>')
     });
 });
