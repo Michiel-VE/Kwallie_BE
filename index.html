@@ -81,14 +81,14 @@
                 <h2 class="text-white mt-0 text-uppercase">Meer informatie</h2>
                 <hr class="divider light my-4"/>
                 <p class="text-white-75 mb-4">
-                    Als organisator creëren wij een online gaming event waar je CS:GO kan spelen tegen anderen.
-                    Je kan deelnemen als je team uit 5 personen bestaat. Als je niet aan 5 personen komt, geen erg,
-                    contacteer ons en wij zullen jou helpen. Je moet geen bepaalt niveau hebben om mee te
-                    kunnen spelen.
+                    Als organisator creëren wij een online gaming event waar je een CS:GO wingman match kan spelen tegen
+                    anderen. Je kan deelnemen als je team uit 2 personen bestaat. Als je niet aan 2 personen komt, geen
+                    erg, contacteer ons en wij zullen jou helpen. Je moet geen bepaalt niveau hebben om mee te kunnen
+                    spelen.
                 </p>
                 <p class="text-white-75 mb-5">
                     Nadat je hieronder je team inschrijft, wordt je doorgestuurd om te betalen. De prijs is €1 per
-                    persoon/€5 per groepje. Na je bent ingeschreven ontvang je een mail met de nodig informatie.
+                    persoon/€2 per team. Na je bent ingeschreven ontvang je een mail met de nodig informatie.
                 </p>
                 <hr class="divider light my-5">
                 <h4 class="font-weight-bold text-white text-uppercase">Time left:</h4>
@@ -107,53 +107,37 @@
             <form id="test-form" class="m-auto">
                 <div class="row m-auto">
                     <div class="col-12 col-md-6 my-auto">
-                        <div class="col-12 m-auto form-group">
-                            <label for="groepsnaam">Groepsnaam:</label>
-                            <input class="mb-3" type="text" id="groepsnaam" name="groepsnaam">
+                        <div class="col-12 m-auto form-group row">
+                            <label class="col-6" for="groepsnaam">Groepsnaam:</label>
+                            <input class="mb-3 col-6" type="text" id="groepsnaam" name="groepsnaam">
                         </div>
 
-                        <div class="col-12 m-auto form-group">
-                            <label for="email">Email: &emsp;&emsp;&emsp;</label>
-                            <input type="email" id="email" name="email"
+                        <div class="col-12 m-auto form-group row">
+                            <label class="col-6" for="email">Email:&nbsp;</label>
+                            <input class=" mb-3 col-6" type="email" id="email" name="email"
                                    pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 my-auto">
-                        <div class="col-12 m-auto form-group ">
-                            <label for="persoon1">Gamer 1:&emsp;</label>
-                            <input class="mb-3" type="text" id="persoon1" name="persoon1">
+                        <div class="col-12 m-auto form-group row">
+                            <label class="col-6" for="persoon1">Gamer 1:&emsp;</label>
+                            <input class="mb-3 col-6" type="text" id="persoon1" name="persoon1">
                         </div>
 
-                        <div class="col-12 m-auto form-group">
-                            <label for="persoon2">Gamer 2:&emsp;</label>
-                            <input class="mb-3" type="text" id="persoon2" name="persoon2">
-                        </div>
-
-                        <div class="col-12 m-auto form-group">
-                            <label for="persoon3">Gamer 3:&emsp;</label>
-                            <input class="mb-3" type="text" id="persoon3" name="persoon3">
-                        </div>
-
-                        <div class="col-12 m-auto form-group">
-                            <label for="persoon4">Gamer 4:&emsp;</label>
-                            <input class="mb-3" type="text" id="persoon4" name="persoon4">
-                        </div>
-
-                        <div class="col-12 m-auto form-group">
-                            <label for="persoon5">Gamer 5:&emsp;</label>
-                            <input class="mb-3" type="text" id="persoon5" name="persoon5">
-                        </div>
-                        <div class="col-12 m-auto form-group d-none">
-                            <label for="betaalt"></label>
-                            <input class="mb-3" type="text" id="betaalt" name="betaalt" value="neen">
-                        </div>
-                        <div class="col-12 m-auto form-group">
-
+                        <div class="col-12 m-auto form-group row">
+                            <label class="col-6" for="persoon2">Gamer 2:&emsp;</label>
+                            <input class="mb-3 col-6" type="text" id="persoon2" name="persoon2">
                         </div>
                     </div>
 
-                    <div id="verstuur" class="col-12 text-center form-group">
+                    <div class="col-12 m-auto form-group d-none">
+                        <label for="betaalt"></label>
+                        <input class="mb-3" type="text" id="betaalt" name="betaalt" value="neen">
+                    </div>
+
+
+                    <div id="verstuur" class="col-12 text-center form-group mt-3">
                         <button type="submit" id="submit-form" class="btn bg-primary text-white">verstuur</button>
                     </div>
                 </div>
@@ -175,13 +159,9 @@
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>test 012 34 56 78</div>
-            </div>
-            <div class="col-lg-4 mr-auto text-center">
-                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a class="d-block text-white" href="mailto:">dummy@dummy.dummy</a>
+            <div class="col-12 text-center">
+                <i class="fab fa-discord fa-3x mb-3 text-white"></i>
+                <a class="d-block text-white" href="https://discord.gg/65RRaEZ">Join onze discord server</a>
             </div>
         </div>
     </div>
