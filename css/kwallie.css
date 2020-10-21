@@ -22,7 +22,7 @@
     background-color: rgba(256,230, 180, 0.9);
 }
 
-#timer {
+#timer, #timerEN {
     font-size: 30px;
     font-weight: bolder;
     background-color: inherit;
