@@ -91,6 +91,21 @@
                     After registering your team, you will be redirected to continue your payment. The price is €1/person
                     or €2/team. When you are registered you will recieve an e-mail with the necessary information.
                 </p>
+                <p class="text-white-75 mb-5">
+                    The reward depends on the number of players. More registers means more profit!. The minimum profit
+                    is €10 for the winning team and if there are enough competitors the losing team in the finals will
+                    also recieve €5.
+                </p>
+                <hr class="divider light my-5">
+                <h2 class="text-white">When?</h2>
+                <div class="text-white mb-5">
+                    <p>
+                        Date: October 30, 2020
+                    </p>
+                    <p>
+                        Tijd: Register 19:30, Start match: 20:00
+                    </p>
+                </div>
                 <hr class="divider light my-5">
                 <h4 class="font-weight-bold text-white text-uppercase">Time left:</h4>
                 <span id="timerEN" class="mb-1"></span>
@@ -103,31 +118,32 @@
     <div class="container p-5 bd text-center rounded">
         <h2 class="text-center mt-0">Register your team</h2>
         <h6 class="text-center mt-0">Don't wait, sign up</h6>
+        <h6 class="text-center mt-0">Registrations end on October 30 2020 at 12:00</h6>
         <hr class="divider my-4"/>
         <div class="row m-auto">
             <form id="formEN" class="m-auto">
                 <div class="row m-auto">
                     <div class="col-12 col-md-6 my-auto">
                         <div class="col-12 m-auto form-group row">
-                            <label class="col-6" for="groepsnaam">Team name:</label>
-                            <input class="mb-3 col-6" type="text" id="groepsnaam" name="groepsnaam">
+                            <label class="col-7 col-sm-6" for="groepsnaam">Team&nbsp;name:<sup class="text-red">*</sup></label>
+                            <input class="mb-3 col-5 col-sm-6" type="text" id="groepsnaam" name="groepsnaam" required>
                         </div>
 
                         <div class="col-12 m-auto form-group row">
-                            <label class="col-6" for="email">E-mail:&nbsp;</label>
-                            <input class=" mb-3 col-6" type="email" id="email" name="email"
+                            <label class="col-6" for="email">E-mail:<sup class="text-red">*</sup></label>
+                            <input class=" mb-3 col-6" type="email" id="email" name="email" required
                                    pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 my-auto">
                         <div class="col-12 m-auto form-group row">
-                            <label class="col-6" for="persoon1">Gamer 1:&emsp;</label>
-                            <input class="mb-3 col-6" type="text" id="persoon1" name="persoon1">
+                            <label class="col-6" for="persoon1">Gamer&nbsp;1:<sup class="text-red">*</sup></label>
+                            <input class="mb-3 col-6" type="text" id="persoon1" name="persoon1" required>
                         </div>
 
                         <div class="col-12 m-auto form-group row">
-                            <label class="col-6" for="persoon2">Gamer 2:&emsp;</label>
+                            <label class="col-6" for="persoon2">Gamer&nbsp;2:&emsp;</label>
                             <input class="mb-3 col-6" type="text" id="persoon2" name="persoon2">
                         </div>
                     </div>
@@ -137,6 +153,9 @@
                         <input class="mb-3" type="text" id="betaalt" name="betaalt" value="neen">
                     </div>
 
+                    <div class="col-12 ml-5 text-left">
+                        <p class="small text-red"><sup>*</sup>&nbsp;Required</p>
+                    </div>
 
                     <div id="verstuurEN" class="col-12 text-center form-group mt-3">
                         <button type="submit" id="submit-form" class="btn bg-primary text-white">Send!</button>

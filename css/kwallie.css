@@ -32,3 +32,9 @@
 .fz{
     font-size: 20px;
 }
+
+.text-red{
+    background-color: inherit;
+    color: red;
+    font-weight: bold;
+}
